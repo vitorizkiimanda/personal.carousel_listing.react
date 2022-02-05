@@ -1,0 +1,25 @@
+.fab {
+    align-items: center;
+    background-color: #e71d35;
+    border-radius: 50%;
+    bottom: 8px;
+    cursor: pointer;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    position: fixed;
+    right: 8px;
+    width: 60px;
+}
+
+@media (min-width: 1280px) {
+    .fab {
+        right: 24px;
+        bottom: 24px;
+    }
+}
+
+.iconFab {
+    height: 14px;
+    width: 14px;
+}
