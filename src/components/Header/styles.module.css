@@ -1,19 +1,88 @@
 .container {
-    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    padding: 16px;
+    width: 100%;
+}
+
+.containerText {
+    width: 100%;
+}
+
+.containerTextIcon {
+    align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    height: 100%;
+    justify-content: space-between;
+    width: 100%;
 }
+
 @media (min-width: 1280px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 100%;
-        width: 1200px;
-        margin: auto;
+    .containerTextIcon {
+        width: 40%;
     }
+}
+
+@media (min-width: 640px) {
+    .containerTextIcon {
+        width: 80%;
+    }
+}
+
+.itemTextIcon {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.itemTextIconUserData {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+}
+
+.imageIconHamburger {
+    cursor: pointer;
+    height: 24px;
+    margin-left: 16px;
+    position: absolute;
+    right: 0;
+    width: 24px;
+}
+
+.imageIcon {
+    height: 16px;
+    margin-right: 4px;
+    width: 16px;
+}
+
+.imageIconVerified {
+    height: 24px;
+    margin-left: 4px;
+    width: 24px;
+}
+
+.imageProfile {
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 16px;
+    width: 40px;
+}
+
+.textName {
+    color: #031727;
+    font-weight: 600;
+}
+
+.textDesc500 {
+    color: #969696;
+    font-weight: 500;
+}
+
+.textDesc {
+    color: #969696;
+    font-weight: 400;
 }

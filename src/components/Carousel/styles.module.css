@@ -1,19 +1,9 @@
 .container {
     background-color: red;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 100%;
-}
-@media (min-width: 1280px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        height: 100%;
-        width: 1200px;
-        margin: auto;
-    }
+    width: 100%;
+
+    /* sticky */
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
