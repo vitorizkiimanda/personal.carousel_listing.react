@@ -6,7 +6,8 @@ const App = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<HomeScreen />} />
+                {/* root , not found , all path the same */}
+                <Route path="*" element={<HomeScreen />} />
             </Routes>
         </BrowserRouter>
     );
