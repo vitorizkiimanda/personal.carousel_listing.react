@@ -1,9 +1,91 @@
+.bgTransition {
+    background-color: #f0f0f0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    bottom: 0;
+    height: 32px;
+    position: absolute;
+    width: 100%;
+}
+
 .container {
-    background-color: red;
+    background-color: white;
+    padding-top: 16px;
+    padding-bottom: 16px;
     width: 100%;
 
     /* sticky */
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+}
+
+.carouselParent {
+    height: 22vh;
+}
+
+.carouselItemSelected {
+    background-color: #f89f1e;
+    border-radius: 20px;
+    /* max-height: 25vh; */
+    margin-left: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+    width: 75%;
+}
+
+.carouselItemNotSelected {
+    border-radius: 10px;
+    /* max-height: 25vh; */
+    margin-left: -64px;
+    overflow: hidden;
+    transition: 0.3s;
+    width: 25%;
+}
+
+.imageCarousel {
+    height: auto;
+    object-fit: contain;
+    width: 75%;
+}
+
+@media (min-width: 440px) {
+    .imageCarousel {
+        height: 180px;
+        width: 330px;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 640px) {
+    .imageCarousel {
+        height: 200px;
+        width: 360px;
+        object-fit: contain;
+    }
+}
+
+@media (min-width: 1280px) {
+    .imageCarousel {
+        height: 300px;
+        width: 540px;
+        object-fit: contain;
+    }
+}
+
+.textDescCarousel {
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px;
+    text-align: left;
+}
+
+.textIndexCarousel {
+    color: #969696;
+    bottom: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    position: absolute;
+    right: 16px;
 }
