@@ -21,7 +21,7 @@
 }
 
 .carouselParent {
-    height: 22vh;
+    height: 180px;
 }
 
 .carouselItemSelected {
@@ -45,31 +45,46 @@
 
 .imageCarousel {
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     width: 75%;
 }
 
 @media (min-width: 440px) {
+    .carouselParent {
+        height: 200px;
+    }
     .imageCarousel {
         height: 180px;
         width: 330px;
-        object-fit: contain;
+        object-fit: cover;
     }
 }
 
 @media (min-width: 640px) {
+    .carouselParent {
+        height: 220px;
+    }
     .imageCarousel {
         height: 200px;
         width: 360px;
-        object-fit: contain;
+        object-fit: cover;
+    }
+    .carouselItemNotSelected {
+        margin-left: -128px;
     }
 }
 
 @media (min-width: 1280px) {
+    .carouselParent {
+        height: 320px;
+    }
     .imageCarousel {
         height: 300px;
         width: 540px;
-        object-fit: contain;
+        object-fit: cover;
+    }
+    .carouselItemNotSelected {
+        margin-left: -240px;
     }
 }
 

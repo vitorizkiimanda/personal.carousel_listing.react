@@ -81,7 +81,9 @@ export default () => {
                         <img
                             alt=""
                             src={val.image}
-                            className={styles.imageCarousel}
+                            className={
+                                index === selectedIndex && styles.imageCarousel
+                            }
                         />
                         {index === selectedIndex && (
                             <div className={styles.textDescCarousel}>
